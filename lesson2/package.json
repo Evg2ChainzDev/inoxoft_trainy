@@ -1,0 +1,12 @@
+{
+  "name": "lesson2",
+  "version": "1.0.0",
+  "author": {
+    "email": "google@gmail.com",
+    "name": "Evg2Chains"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.3"
+  }
+}
