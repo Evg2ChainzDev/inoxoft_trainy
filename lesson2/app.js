@@ -62,9 +62,15 @@ app.post('/auth', (req, res) => {
 
 app.post('/authreg', (req, res) => {
     const {email, password} = req.body;
+    const newUserObj = req.body;
     const user = users.find(item => item.email === email );
     if (!user) {
         res.render('login')
+        console.log(users)
+        console.log(email, password)
+        console.log(newUserObj)
+        users.push(newUserObj)
+        console.log(users)
         return;
     }
     res.render('err')
