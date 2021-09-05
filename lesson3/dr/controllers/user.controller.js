@@ -1,4 +1,5 @@
 const users = require('../dataBase/users')
+const { getUserByEmail } = require('../services/user.service')
 
 module.exports = {
     getUserById: (req, res) => {
@@ -6,6 +7,8 @@ module.exports = {
         const query = req.query
         res.json(users[user_id])
         // res.send('<div>hello </div>')
+
+        // const userByEmail = getUserByEmail(email)
 
         console.log(query)
     },
